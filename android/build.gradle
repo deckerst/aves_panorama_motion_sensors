@@ -3,8 +3,8 @@ version '1.0-SNAPSHOT'
 
 buildscript {
     ext {
-        kotlin_version = '1.8.21'
-        agp_version = '8.0.1'
+        kotlin_version = '1.9.22'
+        agp_version = '8.4.0-rc02'
     }
 
     repositories {
@@ -30,7 +30,7 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace "finaldev.motion_sensors"
-    compileSdkVersion 33
+    compileSdk 34
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
