@@ -1,10 +1,12 @@
 name: motion_sensors
 description: Flutter plugin for accessing the Android and iOS accelerometer, gyroscope, magnetometer, and orientation sensors.
-version: 0.1.0
 homepage: https://github.com/zesage/motion_sensors
+publish_to: none
+
+version: 0.1.0
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: ">=3.11.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -14,12 +16,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints:
 
 flutter:
   plugin:
     platforms:
       android:
         package: finaldev.motion_sensors
-        pluginClass: MotionSensorsPlugin
-      ios:
         pluginClass: MotionSensorsPlugin

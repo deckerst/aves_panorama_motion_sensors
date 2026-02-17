@@ -3,14 +3,14 @@ description: Demonstrates how to use the motion_sensors plugin.
 publish_to: 'none'
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: ">=3.11.0 <4.0.0"
   
 dependencies:
   flutter:
     sdk: flutter
   motion_sensors:
     path: ../
-  cupertino_icons:
+  vector_math:
 
 dev_dependencies:
   flutter_test:
