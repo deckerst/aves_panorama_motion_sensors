@@ -2,8 +2,8 @@ group = "finaldev.motion_sensors"
 version = "1.0-SNAPSHOT"
 
 buildscript {
-    val agp_version = "8.13.2"
-    val kotlin_version = "2.3.0"
+    val agp_version = "9.1.1"
+    val kotlin_version = "2.3.21"
 
     repositories {
         google()
@@ -25,13 +25,12 @@ allprojects {
 
 plugins {
     id("com.android.library")
-    id("kotlin-android")
 }
 
 android {
     namespace = "finaldev.motion_sensors"
 
-    compileSdk = 36
+    compileSdk = flutter.compileSdkVersion
 
     kotlin {
         jvmToolchain(21)
@@ -39,7 +38,7 @@ android {
 
     sourceSets {
         getByName("main") {
-            java.srcDirs("src/main/kotlin")
+            java.directories.add("src/main/kotlin")
         }
     }
 
